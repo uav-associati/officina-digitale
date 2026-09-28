@@ -16,6 +16,8 @@ Usa la scheda **Security**, poi **Report a vulnerability**. La segnalazione rest
 
 Un segreto scritto in un commit resta nella storia del repository anche dopo che lo cancelli dal file. Cancellarlo non basta: va considerato compromesso e sostituito.
 
+I passi da seguire, nell'ordine e con chi li esegue, sono in `docs/05-credenziale-esposta.md`.
+
 ## Cosa facciamo per prevenirlo
 
 - **Push protection** rifiuta la scrittura quando riconosce la forma di una chiave nota
