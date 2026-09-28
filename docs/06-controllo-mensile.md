@@ -54,6 +54,6 @@ Risultati delle cinque ricerche su tutto il registro, dalla nascita dell'organiz
 |---|---|---|
 | 1. Owner | 3 | uomoaltovalore entra come Owner alla creazione dell'organizzazione; emiliosalerno entra due volte come membro, con permesso read |
 | 2. Ruleset e protezioni | 1 | creazione del ruleset `protezione-main` su officina-digitale |
-| 3. Permesso di base | 2 | 24/9 alle 21:23 (GMT+8) da read a write, alle 21:36 da write a none, entrambi da uomoaltovalore |
+| 3. Permesso di base | 2 | 24/9 alle 21:23 (GMT+8) da read a write, alle 21:36 da write a none, entrambi da uomoaltovalore: una prova del percorso, confermata da lui |
 | 4. Da privato a pubblico | 0 | la visibilita' di un repository non e' mai cambiata |
 | 5. App installate o con permessi nuovi | 0 | nell'organizzazione non e' installata nessuna app |
