@@ -48,6 +48,7 @@ Da eseguire nell'ordine. Ogni riga e' verificabile: o e' fatta o non lo e'.
 | GitHub | Segreti delle Actions di questo repository | https://github.com/uav-associati/officina-digitale/settings/secrets/actions |
 | Posta: Hostinger Email | Password di una casella: **Mailboxes** accanto al dominio, poi il menu con i tre puntini della casella, **Change Password** | https://hpanel.hostinger.com/emails/ |
 | Pagamenti: Stripe | Chiavi API: menu con i tre puntini della chiave, **Rotate key**, scadenza **Now**. La rotazione revoca la vecchia chiave e ne crea una nuova; con una scadenza diversa da Now la vecchia resta valida fino a quella data | https://dashboard.stripe.com/apikeys |
+| Pagamenti: Whop | Chiavi API dell'account: nel pannello **Developer**, **API keys**, poi la chiave da revocare | https://whop.com/dashboard |
 | Hosting: Hostinger | Token API: si eliminano dalla stessa pagina in cui si creano, e smettono subito di funzionare | https://hpanel.hostinger.com/api |
 | Hosting: Hostinger | Password FTP: **Dashboard** del sito, **Files**, **FTP Accounts**, poi il cambio password dell'account | https://hpanel.hostinger.com/websites |
 | Hosting: Hostinger | Chiavi SSH: **Dashboard** del sito, **SSH Access**, **Delete** sulla chiave | https://hpanel.hostinger.com/websites |
