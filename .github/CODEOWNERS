@@ -1,15 +1,16 @@
 # Responsabili di zona.
 #
-# Questo file, quando si trova in `.github/CODEOWNERS`, dice a GitHub chi deve
-# essere chiamato ad approvare quando una proposta di modifica tocca certi file.
-# Qui e' fermo, con l'estensione `.esempio`, perche' il percorso te lo fa
-# attivare in una lezione dedicata.
+# GitHub legge questo file da `.github/CODEOWNERS` sul ramo principale: quando una
+# proposta di modifica tocca uno di questi percorsi, chiama ad approvare chi ne
+# risponde. Vale l'ultima riga che corrisponde al file.
 #
-# Sostituisci i nomi fra parentesi con utenti veri della tua organizzazione,
-# nella forma @nome-utente oppure @tua-org/nome-team.
+# Ogni zona deve avere almeno due persone che possono approvare: chi apre una
+# proposta non puo' approvare la propria, e con un solo responsabile le sue
+# proposte in quella zona resterebbero bloccate.
 
 # Regola di riserva: se nessuna riga piu' specifica corrisponde, vale questa.
-*                       @uomoaltovalore
+# Comprende anche questo file.
+*                       @uomoaltovalore @uav-associati/revisori
 
 # Calcolo delle fatture: la parte che tocca i soldi.
 /src/fatture.js         @uav-associati/prodotto
@@ -22,9 +23,9 @@
 /listino.csv            @uav-associati/commerciale
 
 # Documenti aziendali.
-/docs/                  @uomoaltovalore
-/TEAM.md                @uomoaltovalore
+/docs/                  @uomoaltovalore @uav-associati/revisori
+/TEAM.md                @uomoaltovalore @uav-associati/revisori
 
 # Sicurezza e automazioni.
-/SECURITY.md            @uomoaltovalore
-/.github/workflows/     @uomoaltovalore
+/SECURITY.md            @uomoaltovalore @uav-associati/revisori
+/.github/workflows/     @uomoaltovalore @uav-associati/revisori
