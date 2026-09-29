@@ -18,7 +18,7 @@ Il percorso ti guida passo per passo. La lezione 0.4 è quella che ti fa fare la
 |---|---|
 | `src/` | Il prodotto: calcolo delle fatture e anagrafica clienti |
 | `test/` | I controlli automatici che verificano che il prodotto funzioni |
-| `docs/` | I documenti aziendali: processo, policy di accesso, ingresso e uscita delle persone |
+| `docs/` | I documenti aziendali: processo, policy di accesso, ingresso e uscita delle persone, cosa fare se una credenziale finisce esposta, il controllo mensile del registro attività |
 | `TEAM.md` | Le dieci persone di Officina Digitale e cosa deve poter fare ciascuna |
 | `listino.csv` | Il listino prezzi. Serve alle lezioni sui conflitti |
 | `.github/` | Modelli di segnalazione, modello di proposta di modifica, controlli automatici |
