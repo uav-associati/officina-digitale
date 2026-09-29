@@ -1,0 +1,33 @@
+name: Avviso fatture
+
+# Quando una proposta di modifica tocca il calcolo delle fatture, scrive un
+# commento che ricorda di avvisare l'amministrazione prima del merge.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "src/fatture.js"
+      - "test/**"
+
+permissions:
+  pull-requests: write
+
+jobs:
+  avviso:
+    name: Avviso all'amministrazione
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scrivi l'avviso nella proposta di modifica
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.pull_request.number }}
+          MESSAGGIO: |
+            <!-- avviso-fatture -->
+            Questa modifica tocca il calcolo delle fatture: va avvisato chi si occupa di amministrazione prima del merge.
+        run: |
+          if gh pr view "$NUMERO" --repo "$GITHUB_REPOSITORY" --json comments --jq '.comments[].body' | grep -qF '<!-- avviso-fatture -->'; then
+            echo "L'avviso c'è già in questa proposta: non lo ripeto."
+          else
+            gh pr comment "$NUMERO" --repo "$GITHUB_REPOSITORY" --body "$MESSAGGIO"
+          fi
