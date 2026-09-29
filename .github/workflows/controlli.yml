@@ -8,6 +8,11 @@ on:
   push:
     branches: [main]
 
+# Il test legge solo il codice: il token di GitHub riceve la sola lettura,
+# qualunque sia l'impostazione predefinita del repository o dell'organizzazione.
+permissions:
+  contents: read
+
 jobs:
   test:
     name: Test del calcolo fatture
