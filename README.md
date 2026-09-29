@@ -22,7 +22,7 @@ Il percorso ti guida passo per passo. La lezione 0.4 è quella che ti fa fare la
 | `TEAM.md` | Le dieci persone di Officina Digitale e cosa deve poter fare ciascuna |
 | `listino.csv` | Il listino prezzi. Serve alle lezioni sui conflitti |
 | `.github/` | Modelli di segnalazione, modello di proposta di modifica, controlli automatici |
-| `CODEOWNERS.esempio` | Il file dei responsabili, da attivare durante il percorso |
+| `.github/CODEOWNERS` | Il file dei responsabili di zona: chi deve approvare le proposte che toccano ciascuna parte |
 
 ## Un avviso sul controllo automatico
 
